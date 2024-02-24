@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .form {
+            text-align: center;
+            background-color:rgb(218, 187, 165);
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="/submit" method="post">
+        <h1>WELCOME </h1>
+        <h4>1. Lays : Rs. 20</h4>
+        <h4>2. Kurkure: Rs. 20</h4>
+        <h4>3. Pizza: Rs. 150</h4>
+        <h4>4. Pani-Puri: Rs. 60</h4>
+        <h4>5. Aloo Tikki: Rs. 30</h4> <br>
+        <h3>Select Items and Quantity</h3>
+
+        <select name="item" id="item">
+            <option value="Select">Select</option>
+            <option value="Lays">Lays</option>
+            <option value="Kurkure">Kurkure</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Pani-Puri">Pani-Puri</option>
+            <option value="Aloo-tikki">Aloo-tikki</option>
+        </select>
+
+        <input type="number" name="quantity" placeholder="Enter Quantity">
+        <button type="submit">Add Items</button>
+    </form>
+</body>
+</html>
